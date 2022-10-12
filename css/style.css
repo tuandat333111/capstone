@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+#number{
+    padding: 6rem 0 3rem;
+}
+.number_title{
+    max-width: 60rem;
+    
+}
+.number_title h2,.feedback_title h2,.instructors_title h2{
+    font-size: 3.3rem;
+    font-weight: 600;
+    display: inline;
+    position: relative;
+}
+.number_title span,.feedback_title span,.instructors_title span{
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #ff6e65
+}
+.number_title p{
+    font-size: 1.3rem;
+    color: rgb(105, 104, 104);
+    margin-top: 3rem;;
+}
+.number_title h2::before,.feedback_title h2::before,.instructors_title h2::before{
+    content: "";
+    width: 5rem;
+    height: 0.15rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 11.5rem;
+    background-color:  #212121bb;
+
+}
+.number_title h2::after,.feedback_title h2::after,.instructors_title h2::after{
+    content: "";
+    width: 5rem;
+    height: 0.19rem;
+    position: absolute;
+    top: 5rem;
+    left: 13rem;
+    background-color:  #212121bb;
+    
+}
+.number_content{
+    margin: 5rem auto;
+    max-width: 95rem;
+}
+.number_content h3{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.number_content h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+.number_content .number{
+    border-right: 1px solid #4e4d4d54;
+
+}
+/* feedback */
+.feedback_title{
+    margin: 5rem 0;
+}
+.feedback_title h2{
+    font-size: 3.3rem;
+    font-weight: 600;
+    display: inline;
+    position: relative;
+    
+}
+.feedback_title span{
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #ff6e65
+}
+.feedback_title h2::before{
+    content: "";
+    width: 5rem;
+    height: 0.15rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 19rem;
+    background-color:  #212121bb;
+
+}
+.feedback_title h2::after{
+    content: "";
+    width: 5rem;
+    height: 0.19rem;
+    position: absolute;
+    top: 5rem;
+    left: 20.5rem;
+    background-color:  #212121bb;
+    
+}
+
+.feedback__content{
+    max-width: 95rem;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.feedback_intro{
+    width: 33.33%;
+}
+.feedback__intro{    
+    border: 1px solid transparent;
+    border-radius: 5px;  
+    max-width: 35rem;
+    height: 90%;
+    position: relative;
+    padding: 1.8rem;
+    box-shadow: 0 20px 62px #cfccccbb ;
+    margin: 1rem auto;
+   
+    
+}
+.feedback_intro i{
+    font-size: 1.3rem;
+    color: #ff6e65;   
+    position: absolute;
+    left: 2.5rem;
+
+}
+.feedback_intro p{
+    display: inline-block;
+    font-size: 1.4rem;    
+    text-indent: 2rem;
+    padding: 1rem;
+    
+}
+.feedback_image{
+    display: flex;
+}
+.feedback_image img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.feedback_image_content{
+    padding: 0 2rem;
+}
+.feedback_image_content p{
+    text-indent: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #212121bb;
+    font-size: 1.2rem;
+
+}
+.feedback_image_content h2{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+/* Instructors */
+.instructors{
+    max-width: 93rem;
+    padding: 12rem 0 5rem;
+    margin: 0 auto;
+}
+.instructors_content{
+    margin: 6rem auto;
+}
+.card_outside{
+    margin: 1rem 0;
+    
+}
+.card_outside img{   
+   padding: 1.2rem 1.2rem 0 1.2rem ; 
+
+}
+.card-img-top{
+    border-radius: 25px;
+    display: block;
+}
+.card{
+    box-shadow: 0 20px 62px #cfccccbb ;
+}
+.card-body p{
+    color: gray;
+}
