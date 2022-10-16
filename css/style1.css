@@ -6,7 +6,7 @@
     
 }
 body{
-    background-color: whitesmoke;
+    background-color: #161c2d;
 }
 #number{
     padding: 6rem 0 3rem;
@@ -20,6 +20,7 @@ body{
     font-weight: 600;
     display: inline;
     position: relative;
+    color: white;
 }
 .number_title span,.feedback_title span,.instructors_title span{
     font-size: 3rem;
@@ -28,17 +29,18 @@ body{
 }
 .number_title p{
     font-size: 1.3rem;
-    color: rgb(105, 104, 104);
+    color: #b7b7b7;
     margin-top: 3rem;;
 }
 .number_title h2::before,.feedback_title h2::before,.instructors_title h2::before{
     content: "";
     width: 5rem;
-    height: 0.17rem;
+    height: 0.15rem;
     position: absolute;
     top: 110%;
-    left: 37%;
-    background-color:  #212121bb;
+    left: 46%;
+    transform: translateX(-46%);
+    background-color:  #b7b7b7;
 
 }
 .number_title h2::after,.feedback_title h2::after,.instructors_title h2::after{
@@ -47,8 +49,8 @@ body{
     height: 0.15rem;
     position: absolute;
     top: 125%;
-    left: 40%;
-    background-color:  #212121bb;
+    left: 44%;
+    background-color:  #b7b7b7;
     
 }
 .number_content{
@@ -68,42 +70,27 @@ body{
     border-right: 1px solid #4e4d4d54;
 
 }
+.number_content h3,.number_content h4{
+    color: white;
+}
 /* feedback */
 .feedback_title{
     margin: 5rem 0;
 }
 .feedback_title h2{
-    font-size: 3.3rem;
+    font-size: 3rem;
     font-weight: 600;
     display: inline;
     position: relative;
+
     
 }
 .feedback_title span{
-    font-size: 3.3rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #ff6e65
 }
-.feedback_title h2::before{
-    content: "";
-    width: 5rem;
-    height: 0.15rem;
-    position: absolute;
-    top: 4.5rem;
-    left: 19rem;
-    background-color:  #212121bb;
 
-}
-.feedback_title h2::after{
-    content: "";
-    width: 5rem;
-    height: 0.19rem;
-    position: absolute;
-    top: 5rem;
-    left: 20.5rem;
-    background-color:  #212121bb;
-    
-}
 
 .feedback__content{
     max-width: 95rem;
@@ -113,6 +100,8 @@ body{
 }
 .feedback_intro{
     width: 33.33%;
+    background-color: #161c2d;
+    border:1px solid transparent;
 }
 .feedback__intro{    
     border: 1px solid transparent;
@@ -121,7 +110,7 @@ body{
     height: 90%;
     position: relative;
     padding: 1.8rem;
-    box-shadow: 0 20px 62px #cfccccbb ;
+    box-shadow: 0 20px 62px #1c253a;
     margin: 1rem auto;
    
     
@@ -138,6 +127,7 @@ body{
     font-size: 1.4rem;    
     text-indent: 2rem;
     padding: 1rem;
+    color: #b7b7b7;
     
 }
 .feedback_image{
@@ -156,7 +146,7 @@ body{
     display: block;
     padding: 0;
     margin: 0;
-    color: #212121bb;
+    color: #b7b7b7;
     font-size: 1.2rem;
 
 }
@@ -164,6 +154,7 @@ body{
     display: block;
     padding: 0;
     margin: 0;
+    color: white;
 }
 /* Instructors */
 .instructors{
@@ -180,10 +171,14 @@ body{
     
 }
 .card{
-    box-shadow: 0 20px 62px #cfccccbb ;
+    box-shadow: 0 20px 62px #1d253a ;
+    background-color: #161c2d;
+}
+.card-body h4{
+    color: white;
 }
 .card-body p{
-    color: gray;
+    color: #b7b7b7;
 }
 .card-img{
     position: relative;
@@ -228,20 +223,6 @@ body{
     text-decoration: none;
 }
 
-/* .overlay i{
-    position: relative;
-    font-size: 1.2rem;
-    color: blue;
-    background-color: white;
-    margin: auto 0.5rem;
-    border-radius: 50%;
-    padding: 0.45rem;
-    height: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    display: none;
-    
-} */
 .card_outside:hover .overlay{
     height: 20%;
     
@@ -294,6 +275,7 @@ body{
     font-size: 2rem;
     font-weight: 600;
     line-height: 40px;
+    color: white;
     
 }
 .contact__content p{
