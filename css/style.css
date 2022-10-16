@@ -3,6 +3,10 @@
     margin: 0;
     font-size: 16px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    
+}
+body{
+    background-color: whitesmoke;
 }
 #number{
     padding: 6rem 0 3rem;
@@ -164,27 +168,308 @@
 /* Instructors */
 .instructors{
     max-width: 93rem;
-    padding: 12rem 0 5rem;
+    padding: 12rem 0 0rem;
     margin: 0 auto;
 }
 .instructors_content{
     margin: 6rem auto;
 }
-.card_outside{
-    margin: 1rem 0;
-    
-}
-.card_outside img{   
-   padding: 1.2rem 1.2rem 0 1.2rem ; 
-
-}
 .card-img-top{
-    border-radius: 25px;
-    display: block;
+    margin-top: 0.7rem;
+    border-radius: 5px;
+    
 }
 .card{
     box-shadow: 0 20px 62px #cfccccbb ;
 }
 .card-body p{
     color: gray;
+}
+.card-img{
+    position: relative;
+    width: 94%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.overlay{
+    width: 100%;
+    height: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.5s;
+    
+}
+.overlay ul{
+    list-style: none;   
+    margin-top: 0.5rem;   
+      
+}
+.overlay ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0.5rem;
+}
+.overlay a{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+/* .overlay i{
+    position: relative;
+    font-size: 1.2rem;
+    color: blue;
+    background-color: white;
+    margin: auto 0.5rem;
+    border-radius: 50%;
+    padding: 0.45rem;
+    height: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    
+} */
+.card_outside:hover .overlay{
+    height: 20%;
+    
+}
+
+
+.card-title{
+    color: black;
+    transition: all 0.5s;
+}
+.card_outside:hover .card-title{
+    color: #ff6e65;
+}
+.card_outside{
+    margin:1rem 0;
+}
+/* Contact */
+#contact{
+    position: relative;
+}
+.contact{
+    max-width: 70rem;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    
+}
+.contact_image{
+    width: 20%;
+}
+.contact_image img{
+    width: 22rem;
+    height: 22rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.contact__content{
+   
+    height: 75%;
+}
+.contact__content h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 40px;
+    
+}
+.contact__content p{
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 28px;
+    letter-spacing: 00.45px;
+    padding:1rem 0;
+}
+.contact__content button{
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    background-color: #ff6e65;
+    border-style: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+.contact__content button:hover{
+    background-color: #3a26ee;
+}
+
+.subcription{
+    border: 1px solid;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;    
+    border-style: none;
+    padding: 2rem 0;
+    max-width: 60rem;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.sub_left{
+    width: 50%;
+}
+.sub_right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.sub_left h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 2rem 0  0 2rem;
+    line-height: 2.7rem;
+    
+}
+.sub_left p{
+    padding: 0 0 0 2rem;
+    color: gray;
+}
+.sub_right input{   
+    width: 78%;    
+    height: 4rem;
+    border-radius: 10px 0 0 10px;
+    border: 0.5px solid gray;
+    padding: 1rem;
+}
+.sub_right button{
+    width: 22%;   
+    padding: 1.212rem;    
+    border-radius: 0px 10px 10px 0;
+    background-color: blue;
+    color: white;
+    border: 0.5px solid transparent;
+}
+@media screen and (max-width:996px) {
+    .sub_left{
+        display: flex;       
+        justify-content: center;
+    }
+    .sub_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .sub_right input{   
+        width: 20rem;    
+        height: 4rem;
+        border-radius: 10px 0 0 10px;
+        border: 0.5px solid gray;
+        padding: 1rem;
+        
+    }
+    .sub_right button{
+        width: 8rem;   
+        padding: 1.212rem;    
+        border-radius: 0px 10px 10px 0;
+        background-color: blue;
+        color: white;
+        border: 0.5px solid transparent;
+    }
+}
+/* Footer */
+#footer{
+    background-color: #060e1f;
+}
+.footer{
+    width: 100%;
+    padding: 12rem 0 5rem;
+    margin: 0 auto;
+}
+.footer h4{
+    color: white;
+}
+.footer ul li{
+    list-style: none;
+    padding: 0.5rem;
+
+}
+.footer ul li a{
+    text-decoration: none;
+    color: rgb(216, 214, 214);
+    font-size: 0.95rem;
+
+}
+.footer ul li:hover a{
+    color: white;
+}
+.about{
+    border-left: 1px solid rgba(23, 54, 88, 0.4);
+    padding-left: 2.5rem;
+}
+@media screen and (max-width:992px) {
+    .about{
+        border-left: 0px solid rgba(23, 54, 88, 0.4);
+        padding-left: 1rem;
+    }
+
+}
+.about p{
+    color: rgb(216, 214, 214);
+    font-size: 0.95rem;
+}
+.about_icon ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.1rem;
+}
+.about_icon ul li a{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.06);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.abount_icon ul li a i{
+    color: white;
+    
+}
+
+
+.line{
+    width: 100%;
+    height: 0.05rem;
+    background-color: rgba(23, 54, 88, 0.4);
+   
+}
+.footer_intro{
+    background-color: #040a17;
+    padding: 1rem 0;
+}
+.footer_intro p{
+    color: rgb(216, 214, 214);
+    text-align: center;
+    
 }

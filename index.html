@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="./lib/flaticon/flaticon.css">
+
     <link rel="stylesheet" href="./css/style.css">    
     
 </head>
@@ -123,7 +126,23 @@
             <div class="instructors_content row">
                 <div class="card_outside col-12 col-md-6 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="./image/team1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img">
+                            <div class="overlay">
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a></li>
+                                </ul>                               
+                            </div>
+                            <img class="card-img-top" src="./image/team1.jpg" alt="Card image" style="width:100%">
+                            
+                        </div>                        
                         <div class="card-body text-center my-4">
                           <h4 class="card-title">Olive Yew</h4>
                           <p class="card-text">Teaches Design</p>
@@ -132,16 +151,46 @@
                 </div>
                 <div class="card_outside col-12 col-md-6 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="./image/team2.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img">
+                            <img class="card-img-top" src="./image/team2.jpg" alt="Card image" style="width:100%">
+                            <div class="overlay">
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a></li>
+                                </ul>                               
+                            </div>
+                        </div>  
                         <div class="card-body text-center my-4">
                             <h4 class="card-title">Aida Joe</h4>
                             <p class="card-text">UI/UX Designer</p>
-                        </div>
+                        </div>                      
                     </div>                    
                 </div>
                 <div class="card_outside col-12 col-md-6 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="./image/team3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img">
+                            <img class="card-img-top" src="./image/team3.jpg" alt="Card image" style="width:100%">
+                            <div class="overlay">
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a></li>
+                                </ul>                               
+                            </div>
+                        </div>
                         <div class="card-body text-center my-4">
                             <h4 class="card-title">Teri Dac</h4>
                             <p class="card-text">Teaches Skills</p>
@@ -151,7 +200,21 @@
                 </div>
                 <div class="card_outside col-12 col-md-6 col-lg-3">
                     <div class="card">
-                        <img class="card-img-top" src="./image/team4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-img">
+                            <img class="card-img-top" src="./image/team4.jpg" alt="Card image" style="width:100%">
+                            <div class="overlay">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>                               
+                            </div>
+                        </div>
                         <div class="card-body text-center my-4">
                             <h4 class="card-title">Anton Bne</h4>
                             <p class="card-text">Web Designer</p>
@@ -164,29 +227,107 @@
         </div>
     </section>
     <section id="contact">
-
+        <div class="contact row">
+            <div class="contact_image col-12 col-md-12 col-lg-5">
+                <img src="./image/image.png" alt="">
+            </div>
+            <div class="contact_content col-10 col-md-10 col-lg-7">
+                <div class="contact__content">
+                    <h2>Not Sure Where to Begin?</h2>
+                    <h2>Contact Now, We will Help you</h2>
+                    <p>Consectetur adipiscing elit. Aliquam sit amet efficitur tortor.Uspendisse efficitur orci urna. 
+                        In et augue ornare, tempor massa in, luctus sapien.</p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="subcription container row">
+            <div class="sub_left col-12 col-md-12 col-lg-6">
+                <div>
+                    <h2>Subscribe Us to join our Community</h2>
+                    <p>Newsletter</p>
+                </div>
+                
+            </div>
+            <div class="sub_right col-12 col-md-12 col-lg-6">
+                <input type="text" placeholder="Enter your email">
+                <button>Send</button>
+            </div>
+        </div>
     </section>
+    
     <footer id="footer">
-
+        <div class="footer row container">
+            <div class="footer_link col-12 col-sm-6 col-md-6 col-lg-2">
+                <h4>QUICK LINKS</h4>
+                <hr class="line">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> About</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Courses</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_support col-12 col-sm-6 col-md-6 col-lg-3">
+                <h4>HELP & SUPPORT</h4>
+                <hr class="line">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Live Chart</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Faq</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Support</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angles-right"></i> Terms of Services</a></li>
+                </ul>
+            </div>
+            <div class="footer_contact col-12 col-sm-6 col-md-6 col-lg-3">
+                <h4>CONTACT</h4>
+                <hr class="line">
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> info@example.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> +44-000-888-999</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> London, 235 Terry, 10001</a></li>
+                </ul>
+            </div>
+            <div class="about col-12 col-sm-6 col-md-6 col-lg-4">
+                <h4>ABOUT</h4>
+                <hr class="line">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                    oloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+                <div class="about_icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"> <i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_intro">
+            <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
+        </div>
     </footer>
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/counter.js"></script>
-    <script src="./js/owl.carousel.js"></script>
-    <script src="./js/theme-change.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-<script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-<script>
-    $('.countup').countUp({
-    'time': 2000,
-    'delay': 10
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="./lib/CountUp/jquery.countup.min.js"></script>
+
+    <script>
+        $('.countup').countUp({
+        'time': 2000,
+        'delay': 10
+        });
+    </script>
+
     
 </body>
 </html>
