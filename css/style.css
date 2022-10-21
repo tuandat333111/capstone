@@ -8,10 +8,11 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 p {
+    color: #707070;
     margin: 0;
 }
 
@@ -180,7 +181,7 @@ nav .navbar-brand:hover span {
 }
 
 .navbar-nav .nav__input {
-    padding: 0.8rem;
+    padding: 0.5rem;
     border: 2px solid #eee;
     border-radius: 30px;
 }
@@ -193,6 +194,15 @@ nav .navbar-brand:hover span {
 .nav__input input:focus-visible {
     border: 0;
     outline: 0;
+}
+
+.nav__input a {
+    color: #0d369f;
+    transition: all 0.5s;
+}
+
+.nav__input a:hover {
+    color: #ff6e65;
 }
 
 nav .darkmode a i {
@@ -504,7 +514,7 @@ nav .darkmode a i {
         position: absolute;
         right: 80px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(-135deg) scale(var(--ggs, 1));
     }
 
     .owl__info p {
